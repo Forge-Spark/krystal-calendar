@@ -257,6 +257,11 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 .ao-intro{font-size:12px;color:var(--slate);margin-bottom:18px;line-height:1.7;max-width:700px;}
 .ao-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
 .ao-card{background:var(--white);border-radius:10px;padding:18px;border:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.05);}
+.ao-copy{margin-top:14px;padding-top:14px;border-top:1px solid var(--border);}
+.ao-copy-label{font-size:9px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--mid);margin-bottom:8px;}
+.ao-copy-hl{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:7px;line-height:1.25;}
+.ao-copy-body{font-size:11.5px;color:var(--slate);line-height:1.6;margin-bottom:8px;}
+.ao-copy-cta{font-size:10.5px;font-weight:700;color:var(--p1);}
 .ao-name{font-size:15px;font-weight:800;letter-spacing:-.2px;margin-bottom:2px;}
 .ao-type{font-size:10.5px;color:var(--mid);margin-bottom:10px;letter-spacing:.2px;}
 .ao-offer{font-size:10.5px;font-weight:700;color:var(--green);margin-bottom:8px;}
@@ -451,7 +456,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
   <div class="lsep"></div>
   <span class="lchip lcam"><span class="sw"></span>Campaign post (Feel · Believe · Know)</span>
 </div>
-<p class="lead-intro">This calendar covers four months of content — one persona per month, one post per content pillar and three campaign posts following a Feel, Believe, Know arc. The pillars build brand trust over time. The campaigns move the right audience from awareness to a reason to act.</p>
+<p class="lead-intro">Four months. Four personas. One repeatable content engine. Each month produces the same unit: a persona-targeted campaign landing page, three campaign social posts (Feel, Believe and Know) with paid amplification, and five organic posts covering all four story pillars. The campaigns move a specific audience from awareness to a reason to act. The organic posts build brand trust, reach and distinctiveness in between. Same shape every month. Different persona. Different pillar lead.</p>
 
 <!-- ── Tabs ── -->
 <div class="tabs">
@@ -468,14 +473,14 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
     <div class="mo-num">JULY<span>Emma</span></div>
     <div class="mo-body">
       <div class="mo-camp">"Hosting for the business you're building"</div>
-      <div class="mo-desc">Persona: Emma, ethical entrepreneur. Campaign landing page launches week one. Five organic posts cover all four pillars. Four campaign posts (Feel → Believe × 2 → Know) run on Instagram and Facebook with paid amplification. Always-on Emma ad runs throughout.</div>
+      <div class="mo-desc">Persona: Emma, ethical entrepreneur. Emma is building something with purpose and she will not accept greenwashing from her suppliers. This campaign leads with Krystal's verified environmental credentials and transparent pricing, targeting values-led founders on Instagram and Facebook. Landing page launches week one. Campaign posts follow the Feel, Believe and Know arc. Five organic posts cover all four pillars. Pillar lead: environmental integrity and independence.</div>
       <div class="mo-services">
         <div class="mo-svc-label">Relevant services</div>
         <div class="mo-svc-tags">
-          <span class="svc-tag"><a href="https://krystal.io/hosting" target="_blank">Web hosting</a><span class="svc-price">from £7/mo ex VAT</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/hosting/wordpress/managed" target="_blank">Managed WordPress</a><span class="svc-price">from £15/mo ex VAT</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/hosting/business" target="_blank">Business hosting</a><span class="svc-price">from £19/mo ex VAT</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/domains" target="_blank">Domains</a><span class="svc-price">from £7.99/yr ex VAT</span></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting" target="_blank">Web hosting</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/wordpress/managed" target="_blank">Managed WordPress</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/business" target="_blank">Business hosting</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/domains" target="_blank">Domains</a></span>
         </div>
       </div>
     </div>
@@ -715,13 +720,15 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="mo-num">AUGUST<span>James</span></div>
     <div class="mo-body">
       <div class="mo-camp">"The hosting partner agencies can actually stand behind"</div>
-      <div class="mo-desc">Persona: James, agency lead. Campaign landing page launches week one. Five organic pillar posts run across all four pillars. Four campaign posts (Feel → Believe × 2 → Know) run primarily on LinkedIn with paid amplification. Always-on James ad runs throughout.</div>
+      <div class="mo-desc">Persona: James, agency lead. ESG questionnaires are now common in client pitches, and James needs a hosting partner whose credentials hold up in that conversation. This campaign runs primarily on LinkedIn, leading with performance proof then layering in verified environmental credentials. Landing page anchored to the reseller and agency offer. Campaign posts target agency and digital marketing audiences. Five organic posts cover all four pillars. Pillar lead: performance without compromise and independence.</div>
       <div class="mo-services">
         <div class="mo-svc-label">Relevant services</div>
         <div class="mo-svc-tags">
-          <span class="svc-tag"><a href="https://krystal.io/hosting/reseller" target="_blank">Reseller hosting — Unity</a><span class="svc-price">£20/mo ex VAT · 25 accounts</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/hosting/reseller" target="_blank">Reseller hosting — Trinity</a><span class="svc-price">£35/mo ex VAT · 50 accounts</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/hosting/reseller" target="_blank">Reseller hosting — Infinity</a><span class="svc-price">£70/mo ex VAT · 100 accounts</span></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/reseller" target="_blank">Reseller hosting — Unity</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/reseller" target="_blank">Reseller hosting — Trinity</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/reseller" target="_blank">Reseller hosting — Infinity</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/wordpress/managed" target="_blank">Managed WordPress</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/domains" target="_blank">Domains</a></span>
         </div>
       </div>
     </div>
@@ -734,44 +741,36 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="dc we"><div class="dn">01</div></div><div class="dc we"><div class="dn">02</div></div>
     <!-- Row 2 -->
     <div class="dc"><div class="dn">03</div></div>
-    <div class="dc"><div class="dn">04</div><div class="evpl-name">Performance</div></div><span class="evt">Uptime is not a given — here's our number</span><span class="evm"></span></div>
-    </div>
+    <div class="dc"><div class="dn">04</div></div>
     <div class="dc"><div class="dn">05</div></div>
-    <div class="dc"><div class="dn">06</div>
-    </div>
+    <div class="dc"><div class="dn">06</div></div>
     <div class="dc"><div class="dn">07</div></div>
     <div class="dc we"><div class="dn">08</div></div><div class="dc we"><div class="dn">09</div></div>
     <!-- Row 3 -->
-    <div class="dc"><div class="dn">10</div><div class="evpl-name">Environmental</div></div><span class="evt">What B Corp actually means — and how to verify it</span><span class="evm"></span></div>
-    
+    <div class="dc"><div class="dn">10</div></div>
     <div class="dc"><div class="dn">11</div></div>
-    <div class="dc"><div class="dn">12</div><div class="evpl-name">Human support</div></div><span class="evt">When an agency client called at 11pm</span><span class="evm"></span>
-    
-    <div class="dc"><div class="dn">13</div>
-    </div>
+    <div class="dc"><div class="dn">12</div></div>
+    <div class="dc"><div class="dn">13</div></div>
     <div class="dc"><div class="dn">14</div></div>
     <div class="dc we"><div class="dn">15</div></div><div class="dc we"><div class="dn">16</div></div>
     <!-- Row 4 -->
-    <div class="dc"><div class="dn">17</div><div class="evpl-name">Independence</div></div><span class="evt">What's happening to independent hosting</span><span class="evm"></span>
-    
+    <div class="dc"><div class="dn">17</div></div>
     <div class="dc"><div class="dn">18</div></div>
     <div class="dc"><div class="dn">19</div></div>
     <div class="dc"><div class="dn">20</div></div>
-    <div class="dc"><div class="dn">21</div><div class="evpl-name">Performance</div></div><span class="evt">Agency client story — 99.97% uptime over 10 years</span><span class="evm"></span>
-    
+    <div class="dc"><div class="dn">21</div></div>
     <div class="dc we"><div class="dn">22</div></div><div class="dc we"><div class="dn">23</div></div>
     <!-- Row 5 -->
     <div class="dc"><div class="dn">24</div></div>
-    <div class="dc"><div class="dn">25</div>
-    </div>
+    <div class="dc"><div class="dn">25</div></div>
     <div class="dc"><div class="dn">26</div></div><div class="dc"><div class="dn">27</div></div>
     <div class="dc"><div class="dn">28</div></div>
     <div class="dc we"><div class="dn">29</div></div><div class="dc we"><div class="dn">30</div></div>
     <!-- Row 6 -->
     <div class="dc"><div class="dn">31</div></div>
     <div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div>
-  
-
+  </div></div>
+</div>
 
 
 <!-- ════════ SEPTEMBER ════════ Sep 1 = Tue, offset 1 -->
@@ -780,14 +779,12 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="mo-num">SEPTEMBER<span>Alex</span></div>
     <div class="mo-body">
       <div class="mo-camp">"Infrastructure you can put in your supply chain report"</div>
-      <div class="mo-desc">Persona: Alex, climate-conscious decision-maker. Campaign landing page launches week one. Five organic pillar posts run across all four pillars. Four campaign posts (Feel → Believe × 2 → Know) on LinkedIn with Instagram secondary and paid amplification to B Corp, sustainability and climate tech audiences.</div>
+      <div class="mo-desc">Persona: Alex, climate-conscious decision-maker. For B Corps, sustainability startups and climate tech scaleups, one weak supplier link can undermine years of brand credibility. This campaign leads with verified environmental credentials above the fold then proves performance coexists with ethics. Targeting B Corp, sustainability and climate tech audiences on LinkedIn. Landing page anchored to Managed Cloud. Five organic posts cover all four pillars. Pillar lead: environmental integrity and performance without compromise.</div>
       <div class="mo-services">
         <div class="mo-svc-label">Relevant services</div>
         <div class="mo-svc-tags">
-          <span class="svc-tag"><a href="https://krystal.io/managed" target="_blank">Managed Katapult</a><span class="svc-price">Bespoke · talk to sales</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/managed" target="_blank">Managed AWS</a><span class="svc-price">Bespoke · talk to sales</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/managed" target="_blank">Managed Azure</a><span class="svc-price">Bespoke · talk to sales</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/managed" target="_blank">Cloud migration and DevOps</a><span class="svc-price">Bespoke · talk to sales</span></span>
+          <span class="svc-tag"><a href="https://krystal.io/cloud" target="_blank">Managed Cloud</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/business" target="_blank">Business hosting</a></span>
         </div>
       </div>
     </div>
@@ -797,27 +794,21 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="dh">MON</div><div class="dh">TUE</div><div class="dh">WED</div><div class="dh">THU</div><div class="dh">FRI</div><div class="dh">SAT</div><div class="dh">SUN</div>
     <!-- Row 1: offset 1 -->
     <div class="dc em"></div>
-    <div class="dc"><div class="dn">01</div><div class="evpl-name">Environmental</div></div><span class="evt">Verified impact — 3.9M trees tracked and confirmed</span><span class="evm"></span></div>
-    </div>
+    <div class="dc"><div class="dn">01</div></div>
     <div class="dc"><div class="dn">02</div></div>
-    <div class="dc"><div class="dn">03</div>
-    </div>
+    <div class="dc"><div class="dn">03</div></div>
     <div class="dc"><div class="dn">04</div></div>
     <div class="dc we"><div class="dn">05</div></div><div class="dc we"><div class="dn">06</div></div>
     <!-- Row 2 -->
     <div class="dc"><div class="dn">07</div></div>
-    <div class="dc"><div class="dn">08</div><div class="evpl-name">Performance</div></div><span class="evt">PUE 1.10. Industry average 1.5+. Here's what that means.</span><span class="evm"></span></div>
-    
+    <div class="dc"><div class="dn">08</div></div>
     <div class="dc"><div class="dn">09</div></div>
-    <div class="dc"><div class="dn">10</div>
-    </div>
-    <div class="dc"><div class="dn">11</div><div class="evpl-name">Human support</div></div><span class="evt">Meet the people behind the sustainability work</span><span class="evm"></span>
-    
+    <div class="dc"><div class="dn">10</div></div>
+    <div class="dc"><div class="dn">11</div></div>
     <div class="dc we"><div class="dn">12</div></div><div class="dc we"><div class="dn">13</div></div>
     <!-- Row 3 -->
     <div class="dc"><div class="dn">14</div></div>
-    <div class="dc"><div class="dn">15</div><div class="evpl-name">Independence</div></div><span class="evt">What greenwashing in hosting actually looks like</span><span class="evm"></span>
-    
+    <div class="dc"><div class="dn">15</div></div>
     <div class="dc"><div class="dn">16</div></div>
     <div class="dc"><div class="dn">17</div></div>
     <div class="dc"><div class="dn">18</div></div>
@@ -826,16 +817,15 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="dc"><div class="dn">21</div></div>
     <div class="dc"><div class="dn">22</div></div>
     <div class="dc"><div class="dn">23</div></div>
-    <div class="dc"><div class="dn">24</div>
-    </div>
+    <div class="dc"><div class="dn">24</div></div>
     <div class="dc"><div class="dn">25</div></div>
     <div class="dc we"><div class="dn">26</div></div><div class="dc we"><div class="dn">27</div></div>
     <!-- Row 5 -->
     <div class="dc"><div class="dn">28</div></div><div class="dc"><div class="dn">29</div></div>
     <div class="dc"><div class="dn">30</div></div>
     <div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div>
-  
-
+  </div></div>
+</div>
 
 
 <!-- ════════ OCTOBER ════════ Oct 1 = Thu, offset 3 -->
@@ -843,16 +833,13 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
   <div class="mo">
     <div class="mo-num">OCTOBER<span>Sarah</span></div>
     <div class="mo-body">
-      <div class="mo-camp">"Built for people who actually check the numbers"</div>
-      <div class="mo-desc">Persona: Sarah, developer and technical lead. Campaign landing page launches week one. Five organic pillar posts run across all four pillars. Four campaign posts (Feel → Believe × 2 → Know) run on LinkedIn targeting developers and technical leads. Always-on Sarah ad runs throughout.</div>
+      <div class="mo-camp">"The benchmarks. Not the marketing."</div>
+      <div class="mo-desc">Persona: Sarah, developer and technical lead. Queued for Q2. Sarah decides on evidence and switches off the moment copy oversells. This campaign leads with raw performance data: PUE, uptime SLA, NVMe, latency. No marketing language. Targeting developers and technical leads on LinkedIn. Landing page anchored to VPS and Krystal Cloud. Five organic posts cover all four pillars. Pillar lead: performance without compromise.</div>
       <div class="mo-services">
         <div class="mo-svc-label">Relevant services</div>
         <div class="mo-svc-tags">
-          <span class="svc-tag"><a href="https://krystal.io/cloud-vps" target="_blank">VPS hosting</a><span class="svc-price">from £10/mo ex VAT</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/cloud/products/virtual-machines" target="_blank">Katapult — Virtual Machines</a><span class="svc-price">Pay as you go</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/cloud/products/block-storage" target="_blank">Block Storage</a><span class="svc-price">Pay as you go</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/cloud/products/object-storage" target="_blank">Object Storage</a><span class="svc-price">Pay as you go</span></span>
-          <span class="svc-tag"><a href="https://krystal.io/cloud/products/gpus" target="_blank">GPUs</a><span class="svc-price">Pay as you go</span></span>
+          <span class="svc-tag"><a href="https://krystal.io/cloud" target="_blank">Krystal Cloud</a></span>
+          <span class="svc-tag"><a href="https://krystal.io/hosting/vps" target="_blank">VPS hosting</a></span>
         </div>
       </div>
     </div>
@@ -862,37 +849,29 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="dh">MON</div><div class="dh">TUE</div><div class="dh">WED</div><div class="dh">THU</div><div class="dh">FRI</div><div class="dh">SAT</div><div class="dh">SUN</div>
     <!-- Row 1: offset 3 -->
     <div class="dc em"></div><div class="dc em"></div><div class="dc em"></div>
-    <div class="dc"><div class="dn">01</div>
-    </div>
+    <div class="dc"><div class="dn">01</div></div>
     <div class="dc"><div class="dn">02</div></div>
     <div class="dc we"><div class="dn">03</div></div><div class="dc we"><div class="dn">04</div></div>
     <!-- Row 2 -->
     <div class="dc"><div class="dn">05</div></div>
-    <div class="dc"><div class="dn">06</div><div class="evpl-name">Performance</div></div><span class="evt">PUE 1.10. NVMe. 99.9% uptime. The benchmarks.</span><span class="evm"></span></div>
-    </div>
+    <div class="dc"><div class="dn">06</div></div>
     <div class="dc"><div class="dn">07</div></div>
-    <div class="dc"><div class="dn">08</div>
-    </div>
+    <div class="dc"><div class="dn">08</div></div>
     <div class="dc"><div class="dn">09</div></div>
     <div class="dc we"><div class="dn">10</div></div><div class="dc we"><div class="dn">11</div></div>
     <!-- Row 3 -->
     <div class="dc"><div class="dn">12</div></div>
-    <div class="dc"><div class="dn">13</div><div class="evpl-name">Environmental</div></div><span class="evt">100% renewable — here's how to verify it yourself</span><span class="evm"></span></div>
-    
-    <div class="dc"><div class="dn">14</div><div class="evpl-name">Human support</div></div><span class="evt">Technical support that actually knows the stack</span><span class="evm"></span>
-    
+    <div class="dc"><div class="dn">13</div></div>
+    <div class="dc"><div class="dn">14</div></div>
     <div class="dc"><div class="dn">15</div></div>
     <div class="dc"><div class="dn">16</div></div>
     <div class="dc we"><div class="dn">17</div></div><div class="dc we"><div class="dn">18</div></div>
     <!-- Row 4 -->
     <div class="dc"><div class="dn">19</div></div>
-    <div class="dc"><div class="dn">20</div><div class="evpl-name">Independence</div></div><span class="evt">No private equity. No exit strategy. Just infrastructure.</span><span class="evm"></span>
-    
+    <div class="dc"><div class="dn">20</div></div>
     <div class="dc"><div class="dn">21</div></div>
-    <div class="dc"><div class="dn">22</div><div class="evpl-name">Performance</div></div><span class="evt">Real latency benchmarks — before and after migration</span><span class="evm">Sarah ext.</span>
-    
-    <div class="dc"><div class="dn">23</div>
-    </div>
+    <div class="dc"><div class="dn">22</div></div>
+    <div class="dc"><div class="dn">23</div></div>
     <div class="dc we"><div class="dn">24</div></div><div class="dc we"><div class="dn">25</div></div>
     <!-- Row 5 -->
     <div class="dc"><div class="dn">26</div></div><div class="dc"><div class="dn">27</div></div>
@@ -900,8 +879,8 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
     <div class="dc"><div class="dn">30</div></div>
     <div class="dc we"><div class="dn">31</div></div>
     <div class="dc em"></div>
-  
-
+  </div></div>
+</div>
 
 
 <!-- ════════ ALWAYS-ON ADS ════════ -->
@@ -914,6 +893,12 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
       <div class="ao-offer">Website hosting + managed WordPress + domains</div>
       <div class="ao-hook">"You're building something that means something. Your hosting should too."</div>
       <div class="ao-tags"><span class="tg tig">IG</span><span class="tg tfb">Facebook</span><span class="tg tgt">Lookalike: ethical founders</span></div>
+      <div class="ao-copy">
+        <div class="ao-copy-label">Ad copy</div>
+        <div class="ao-copy-hl">Hosting for the business you're building</div>
+        <div class="ao-copy-body">You care where your money goes. Your hosting should too. Krystal is B Corp certified, runs on 100% verified renewable energy and charges the same price at renewal as the day you signed up. UK-based support from real people. Everything shown ex VAT.</div>
+        <div class="ao-copy-cta">krystal.uk/hosting-for-founders</div>
+      </div>
     </div>
     <div class="ao-card">
       <div class="ao-name">James</div>
@@ -921,6 +906,12 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
       <div class="ao-offer">Reseller / agency offer</div>
       <div class="ao-hook">"Your clients are asking about ESG. Your hosting should have answers."</div>
       <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Agency / digital marketing</span></div>
+      <div class="ao-copy">
+        <div class="ao-copy-label">Ad copy</div>
+        <div class="ao-copy-hl">The hosting partner agencies can actually stand behind</div>
+        <div class="ao-copy-body">Your clients are asking about ESG credentials. Your hosting choice is part of that answer. Krystal is B Corp certified, 100% renewable energy verified and offers reseller packages built for agencies. UK-based support. Renewal pricing that does not change without notice.</div>
+        <div class="ao-copy-cta">krystal.uk/agency-hosting</div>
+      </div>
     </div>
     <div class="ao-card">
       <div class="ao-name">Alex</div>
@@ -928,6 +919,12 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
       <div class="ao-offer">Managed Cloud / enterprise</div>
       <div class="ao-hook">"Your hosting is part of your supply chain. Make sure it can prove it."</div>
       <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">B Corp / sustainability / climate tech</span></div>
+      <div class="ao-copy">
+        <div class="ao-copy-label">Ad copy</div>
+        <div class="ao-copy-hl">Your supply chain includes your hosting. Make sure it can prove its credentials.</div>
+        <div class="ao-copy-body">Krystal is B Corp certified, Gold Standard carbon-neutral and runs on 100% verified renewable energy. Managed Cloud infrastructure for organisations that need performance and provenance. Every environmental claim is independently verified and publicly available.</div>
+        <div class="ao-copy-cta">krystal.uk/sustainable-hosting</div>
+      </div>
     </div>
     <div class="ao-card">
       <div class="ao-name">Sarah</div>
@@ -935,6 +932,12 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
       <div class="ao-offer">VPS / Krystal Cloud</div>
       <div class="ao-hook">"Just show me the numbers. PUE, uptime, latency."</div>
       <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Developers / tech leads</span></div>
+      <div class="ao-copy">
+        <div class="ao-copy-label">Ad copy</div>
+        <div class="ao-copy-hl">The benchmarks. Not the marketing.</div>
+        <div class="ao-copy-body">PUE 1.10. NVMe SSD. 99.9% uptime SLA. UK data centres. Krystal Cloud and VPS hosting for developers who want the numbers, not the pitch. Fully managed or self-managed. Scales with your infrastructure.</div>
+        <div class="ao-copy-cta">krystal.uk/developer-hosting</div>
+      </div>
       <div class="q2tag">Full campaign: October 2026</div>
     </div>
   </div>
@@ -975,6 +978,7 @@ Explore plans at krystal.uk." onclick="openPanel(this)" draggable="true"><span c
         <label class="ch-item"><input type="checkbox" value="TikTok" onchange="renderCaptionFields(); autoSave()"><span>TikTok </span></label>
         <label class="ch-item"><input type="checkbox" value="BlueSky" onchange="renderCaptionFields(); autoSave()"><span>BlueSky</span></label>
         <label class="ch-item"><input type="checkbox" value="YouTube" onchange="renderCaptionFields(); autoSave()"><span>YouTube</span></label>
+        <label class="ch-item"><input type="checkbox" value="Landing page" onchange="renderCaptionFields(); autoSave()"><span>Landing page</span></label>
       </div>
     </div>
     <div class="panel-section">
@@ -1032,7 +1036,7 @@ function renderCaptionFields(){
   var checked = [];
   document.querySelectorAll('.ch-item input:checked').forEach(function(c){ checked.push(c.value); });
 
-  var chLabels = {IG:'Instagram',Facebook:'Facebook',LinkedIn:'LinkedIn',TikTok:'TikTok',BlueSky:'BlueSky',YouTube:'YouTube'};
+  var chLabels = {IG:'Instagram',Facebook:'Facebook',LinkedIn:'LinkedIn',TikTok:'TikTok',BlueSky:'BlueSky',YouTube:'YouTube','Landing page':'Landing page'};
 
   if(checked.length === 0){
     container.innerHTML = '<p style="font-size:11px;color:var(--slate);margin-top:6px;">Select a channel above to add a caption.</p>';
