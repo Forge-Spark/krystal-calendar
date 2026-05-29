@@ -249,7 +249,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 
 /* ── Always-on ── */
 .ao-intro{font-size:12px;color:var(--slate);margin-bottom:18px;line-height:1.7;max-width:700px;}
-.ao-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.ao-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
 .ao-card{background:var(--white);border-radius:10px;padding:18px;border:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.05);}
 .ao-copy{margin-top:14px;padding-top:14px;border-top:1px solid var(--border);}
 .ao-copy-label{font-size:9px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--mid);margin-bottom:8px;}
@@ -418,6 +418,18 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
   letter-spacing:.6px;text-transform:uppercase;cursor:pointer;transition:background .15s;}
 .save-layout-btn:hover{background:rgba(255,255,255,.22);}
 .panel-title[contenteditable]:focus{outline:none;border-bottom:2px solid rgba(31,69,92,.3);}
+
+.ao-persona-tabs{display:flex;gap:4px;margin-bottom:20px;border-bottom:2px solid var(--dark);padding-bottom:0;}
+.ao-ptab{background:none;border:none;padding:8px 18px;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;cursor:pointer;color:#64748b;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s;}
+.ao-ptab:hover{color:var(--dark);}
+.ao-ptab.active{color:var(--dark);border-bottom-color:var(--dark);}
+.ao-persona{display:none;}
+.ao-persona.active{display:block;}
+.ao-pdesc{font-size:14px;color:#475569;margin-bottom:20px;max-width:720px;line-height:1.6;}
+.ao-why-label{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#10b981;margin-bottom:6px;}
+.ao-why{font-size:13px;color:#334155;line-height:1.6;border-left:3px solid #10b981;padding-left:12px;margin-bottom:14px;background:#f0fdf4;padding:8px 10px 8px 12px;border-radius:0 4px 4px 0;}
+.ao-variant{margin-top:10px;background:#f8f9fa !important;}
+.tq2{background:#fef3c7;color:#92400e;border:1px solid #fcd34d;}
 </style></defs><g><g><path class="fsl1" d="M0,76.7V24.06H36.11v12.6H14.46v8.75H32.1V57.13H14.46V76.7Z"/><path class="fsl1" d="M64.8,77.14a25.19,25.19,0,0,1-10.9-2.3,26.86,26.86,0,0,1-8.38-6,27.28,27.28,0,0,1-5.41-8.56,26.41,26.41,0,0,1-1.93-9.94,25.91,25.91,0,0,1,2-10,26.7,26.7,0,0,1,5.6-8.49A27.29,27.29,0,0,1,54.31,26a26.23,26.23,0,0,1,10.78-2.19A25.33,25.33,0,0,1,76,26.06a26.77,26.77,0,0,1,8.38,6.08,27.33,27.33,0,0,1,5.37,8.6,26.82,26.82,0,0,1,1.89,9.86,25.44,25.44,0,0,1-2,10A27,27,0,0,1,84.07,69a27.34,27.34,0,0,1-8.49,5.89A25.93,25.93,0,0,1,64.8,77.14ZM52.86,50.45a18.13,18.13,0,0,0,.74,5.16A13.68,13.68,0,0,0,55.83,60a11.15,11.15,0,0,0,3.74,3.11,12.63,12.63,0,0,0,10.79,0,10.85,10.85,0,0,0,3.74-3.18,13.84,13.84,0,0,0,2.15-4.49A18.88,18.88,0,0,0,77,50.3a17.77,17.77,0,0,0-.74-5.15A12.7,12.7,0,0,0,74,40.78a12.19,12.19,0,0,0-14.45-3,11,11,0,0,0-3.75,3.15,13.32,13.32,0,0,0-2.19,4.45A18.47,18.47,0,0,0,52.86,50.45Z"/><path class="fsl1" d="M97.79,76.7V24.06H122a15.88,15.88,0,0,1,7.11,1.6,18.33,18.33,0,0,1,5.6,4.15,19.35,19.35,0,0,1,3.67,5.85,17.56,17.56,0,0,1,1.33,6.64,18.62,18.62,0,0,1-2,8.56,17.4,17.4,0,0,1-5.56,6.49L143.23,76.7H126.92l-9.27-16.16h-5.41V76.7Zm14.45-28.77h9.12a3.21,3.21,0,0,0,2.49-1.48A6.67,6.67,0,0,0,125,42.3a6,6,0,0,0-1.33-4.19A3.76,3.76,0,0,0,121,36.66h-8.75Z"/><path class="fsl1" d="M182.89,72.32a19.51,19.51,0,0,1-13,4.75,26.83,26.83,0,0,1-9.79-1.82A23.4,23.4,0,0,1,152,70a25.63,25.63,0,0,1-5.56-8.53,30,30,0,0,1-2.08-11.48,25.69,25.69,0,0,1,7.79-18.65,26.87,26.87,0,0,1,8.56-5.56,27.55,27.55,0,0,1,10.64-2,29.22,29.22,0,0,1,6.82.78,24.45,24.45,0,0,1,6,2.3,23.68,23.68,0,0,1,5,3.63,18.49,18.49,0,0,1,3.63,4.78l-10.75,8.23a12.13,12.13,0,0,0-4.67-5,12.54,12.54,0,0,0-6.6-1.89,10.76,10.76,0,0,0-4.74,1,11.13,11.13,0,0,0-3.71,2.9,13.65,13.65,0,0,0-2.45,4.41,18.16,18.16,0,0,0,0,11.23,12.8,12.8,0,0,0,2.49,4.33,10.83,10.83,0,0,0,3.81,2.82,12,12,0,0,0,5,1,14.8,14.8,0,0,0,11.12-5.18h-9.12V48.68h21.65v28H182.89Z"/><path class="fsl1" d="M239.46,64.09V76.7H202V24.06h36.84v12.6H216.4v7.42h19.13V55.79H216.4v8.3Z"/><path class="fsl1" d="M434.69,77.51V25.38a.25.25,0,0,1,.25-.25h22.43a16.05,16.05,0,0,1,7.12,1.59,18.79,18.79,0,0,1,5.6,4.15,19.6,19.6,0,0,1,3.67,5.86,17.55,17.55,0,0,1,1.33,6.63A19.27,19.27,0,0,1,470.31,56a16.7,16.7,0,0,1-5.49,4.08,16.3,16.3,0,0,1-7.08,1.52h-8.35a.25.25,0,0,0-.25.25V77.51a.25.25,0,0,1-.25.25H434.94A.25.25,0,0,1,434.69,77.51Zm14.45-28.76a.25.25,0,0,0,.25.25h7.39a3.4,3.4,0,0,0,2.48-1.22c.77-.82,1.15-2.29,1.15-4.42s-.44-3.65-1.33-4.44a4.06,4.06,0,0,0-2.67-1.19h-7a.25.25,0,0,0-.25.25Z"/><path class="fsl1" d="M490.84,25.13h12.84a.23.23,0,0,1,.23.17L522,77.43a.26.26,0,0,1-.24.33H507.6a.25.25,0,0,1-.24-.17l-3.08-10a.25.25,0,0,0-.24-.18H490.4a.25.25,0,0,0-.24.18l-3,10a.24.24,0,0,1-.24.17H472.7a.26.26,0,0,1-.24-.33L490.6,25.29A.25.25,0,0,1,490.84,25.13Zm11,32.37-4.35-15.17a.25.25,0,0,0-.48,0L492.46,57.5a.25.25,0,0,0,.24.32h8.9A.26.26,0,0,0,501.84,57.5Z"/><path class="fsl1" d="M526.47,77.51V25.38a.25.25,0,0,1,.25-.25h23.92a16,16,0,0,1,7.11,1.59,18.66,18.66,0,0,1,5.6,4.15A19.4,19.4,0,0,1,567,36.73a17.55,17.55,0,0,1,1.33,6.63,18.7,18.7,0,0,1-2,8.57A17.39,17.39,0,0,1,561,58.29a.24.24,0,0,0-.07.31l10.8,18.79a.25.25,0,0,1-.22.37H555.75a.24.24,0,0,1-.22-.12l-9.12-15.91a.26.26,0,0,0-.22-.13h-5a.25.25,0,0,0-.25.25V77.51a.25.25,0,0,1-.25.25H526.72A.25.25,0,0,1,526.47,77.51Zm14.45-28.76a.25.25,0,0,0,.25.25H550a3.23,3.23,0,0,0,2.49-1.48,6.7,6.7,0,0,0,1.14-4.16,5.94,5.94,0,0,0-1.33-4.18,3.73,3.73,0,0,0-2.67-1.45h-8.5a.25.25,0,0,0-.25.25Z"/><path class="fsl1" d="M576.51,77.51V25.38a.25.25,0,0,1,.25-.25h14a.25.25,0,0,1,.25.25V44.43a.25.25,0,0,0,.45.16L606.9,25.22a.25.25,0,0,1,.2-.09h15.66a.25.25,0,0,1,.2.4l-18.68,23a.24.24,0,0,0,0,.3l20.07,28.51a.25.25,0,0,1-.2.39h-16a.25.25,0,0,1-.21-.11l-12.8-19a.25.25,0,0,0-.39,0L591,62.49a.29.29,0,0,0-.07.18V77.51a.25.25,0,0,1-.25.25h-14A.25.25,0,0,1,576.51,77.51Z"/><path class="fsl1" d="M427.2,55.38A12.27,12.27,0,0,0,424,51a20.64,20.64,0,0,0-5-3.15,56,56,0,0,0-6.56-2.44c-1.54-.5-2.91-.92-4.12-1.26A24.22,24.22,0,0,1,405.26,43a6.23,6.23,0,0,1-1.93-1.22,2.3,2.3,0,0,1-.67-1.71,2.08,2.08,0,0,1,1.15-2,6.81,6.81,0,0,1,3.08-.59,16.15,16.15,0,0,1,4.85.78A41,41,0,0,1,416.23,40a38.29,38.29,0,0,1,4.37,2.24.25.25,0,0,0,.34-.1l6-11.48a.24.24,0,0,0-.1-.34c-1.13-.56-2.39-1.15-3.78-1.78s-3.08-1.28-4.78-1.85a45.29,45.29,0,0,0-5.3-1.41,28.39,28.39,0,0,0-5.64-.56,24.05,24.05,0,0,0-7.45,1.15A19.48,19.48,0,0,0,394,29a26.77,26.77,0,0,1-6,16.7,13.76,13.76,0,0,0,.47,1.94,11.27,11.27,0,0,0,2.41,4A16.25,16.25,0,0,0,395,54.67a38.33,38.33,0,0,0,6,2.56c1.58.54,3.08,1,4.48,1.41s2.66.79,3.75,1.18a8.93,8.93,0,0,1,2.56,1.37,2.41,2.41,0,0,1,.92,1.9,2,2,0,0,1-.92,1.67,6.07,6.07,0,0,1-3.15.62,25,25,0,0,1-8.57-1.63A31.57,31.57,0,0,1,397,62.49a44.22,44.22,0,0,1-5.19-2.74.24.24,0,0,0-.35.1l-6,12.21a.26.26,0,0,0,.1.34,36.66,36.66,0,0,0,5,2.4,54.39,54.39,0,0,0,5.78,1.93,53.13,53.13,0,0,0,6,1.26,42,42,0,0,0,5.93.44,31.06,31.06,0,0,0,7.23-.85A19.3,19.3,0,0,0,422,74.8a14.17,14.17,0,0,0,4.6-5.15,16.63,16.63,0,0,0,1.74-8A16,16,0,0,0,427.2,55.38Z"/><path class="fsl2" d="M341.54,63.89c18.81,2.83,29.12,13.34,29.32,27.29.4,24.67-32.15,40.64-62.68,40.64-35.58,0-62.47-16-62.47-42.66,0-24.46,23-34.57,33.56-33.36C268.15,54.38,256,44.28,256,29.92,256,11.52,275.43,0,298.07,0c16.79,0,37.61,6.07,37.61,26.69,0,13.14-8.29,24.86-20.62,24.86-6.88,0-11.53-3.84-11.53-9.7,0-7.48,7.89-8.49,7.89-18.8,0-8.29-4.25-15-12.33-15-10.72,0-14,11.52-14,20.42,0,10.71,4.86,22.23,17.6,27.69l-3.24,10.52-2.43-.21c-10.11-.2-18,8.7-18,23.86,0,16.58,9.3,32.55,29.11,32.55,23.46,0,30.33-19.4,30.33-32.55,0-9.1-3.43-16-10.51-16-7.89,0-10.92,8.29-4.65,13.95H312.23c-4.05-2-6.47-5-6.47-9.5,0-6.67,5.66-11.93,13.14-16.78l25.27-17c9.3-6.26,17.39-12.53,17.39-20.82,0-6.67-5.46-10.51-15.77-8.29-1.21.41-2.63-.61-3.84-4-1.42-3.44-.61-4.85,1.21-5.66A56.76,56.76,0,0,1,360.75,3c12.74,0,28.91,6.47,28.91,22.85C389.66,47.11,361.36,55.8,341.54,63.89Z"/></g></g></svg>
     </div>
     <div class="hdr-divider"></div>
@@ -482,33 +494,34 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 
   <div class="cal-wrap"><div class="cal">
     <div class="dh">MON</div><div class="dh">TUE</div><div class="dh">WED</div><div class="dh">THU</div><div class="dh">FRI</div><div class="dh">SAT</div><div class="dh">SUN</div>
-    <!-- Row 1: offset 2 -->
-    <div class="dc em"></div><div class="dc em"></div>
+    <!-- Row 1: Jul 1=Wed, offset 2 -->
+    <div class="dc em"></div>
+    <div class="dc em"></div>
     <div class="dc"><div class="dn">01</div>
       <div class="ev lp" data-chip="jul-lp" data-cta="krystal.uk/hosting-for-founders" data-cta-hint="Emma campaign landing page" data-caption="Landing page live: krystal.uk/hosting-for-founders&#10;&#10;Built for the business you are building. Ethical hosting, independently verified. UK-based support from people who know what they are doing.&#10;&#10;Everything shown ex VAT." data-hashtags="#EthicalHosting #UKHosting #BCorpUK #SustainableHosting #SmallBusinessUK" data-fmt="Landing page" data-channels="Web" onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-lp">Landing page</span><span class="evcl">Campaign launch</span><span class="evt">Hosting for the business you're building</span><span class="evm">krystal.uk/hosting-for-founders</span></div>
     </div>
     <div class="dc"><div class="dn">02</div>
-      <div class="ev cam" data-chip="jul-cam-feel" data-cta="krystal.uk/hosting-for-founders" data-cta-hint="Emma landing page — feel" data-caption="Most hosting companies say they are green. Few can prove it.&#10;&#10;Offsetting with tree-planting credits is not the same as running on renewable energy. Claiming 'sustainable' without a certificate to back it up is a marketing choice, not a commitment.&#10;&#10;Krystal runs on 100% verified renewable energy. B Corp certified. 1% for the Planet member. Gold Standard carbon-neutral certified. Every credential is published, not promised.&#10;&#10;If your hosting cannot name its energy source, that is worth knowing.&#10;&#10;Find out more at krystal.uk." data-hashtags="#GreenHosting #Greenwashing #SustainableHosting #BCorpUK #EthicalBusiness #WebHosting #GreenBusiness" data-fmt="Static" data-channels="IG,Facebook"  data-caption-ig="Most hosting companies say they are green.&#10;&#10;Very few can prove it.&#10;&#10;Offsetting with tree credits is not the same as running on renewable energy. A 'sustainable' badge with no third-party certification behind it is a marketing choice, not an environmental one.&#10;&#10;Krystal runs on 100% verified renewable energy. B Corp certified. Gold Standard carbon-neutral. 1% for the Planet member.&#10;&#10;Every credential is published. Find out more at krystal.uk." data-caption-fb="Most hosting companies say they are green. Very few can prove it.&#10;&#10;Greenwashing in the hosting industry is common because the language is vague and the verification is optional. Offsetting with generic tree-planting credits is not the same as running on renewable energy. Claiming 'sustainable' without a named certification is a marketing decision, not an environmental one.&#10;&#10;Krystal's credentials are specific, third-party verified and publicly available. B Corp certified. 100% renewable energy. Gold Standard carbon-neutral. 1% for the Planet member.&#10;&#10;If your current hosting provider cannot name its energy source, that is worth knowing.&#10;&#10;Find out more at krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-cam-feel">Static</span><span class="ev-tt">TT</span><span class="evcl">Campaign · Feel ·</span><span class="evt">The greenwashing problem in hosting</span><span class="evm">Boosted cold</span></div></div>
+      <div class="ev cam" data-chip="jul-cam-feel" data-cta="krystal.uk/hosting-for-founders" data-cta-hint="Emma landing page — feel" data-caption="Most hosting companies say they are green. Few can prove it.&#10;&#10;Offsetting with tree-planting credits is not the same as running on renewable energy. Claiming 'sustainable' without a certificate to back it up is a marketing choice, not a commitment.&#10;&#10;Krystal runs on 100% verified renewable energy. B Corp certified. 1% for the Planet member. Gold Standard carbon-neutral certified. Every credential is published, not promised.&#10;&#10;If your hosting cannot name its energy source, that is worth knowing.&#10;&#10;Find out more at krystal.uk." data-hashtags="#GreenHosting #Greenwashing #SustainableHosting #BCorpUK #EthicalBusiness #WebHosting #GreenBusiness" data-fmt="Static" data-channels="IG,Facebook"  data-caption-ig="Most hosting companies say they are green.&#10;&#10;Very few can prove it.&#10;&#10;Offsetting with tree credits is not the same as running on renewable energy. A 'sustainable' badge with no third-party certification behind it is a marketing choice, not an environmental one.&#10;&#10;Krystal runs on 100% verified renewable energy. B Corp certified. Gold Standard carbon-neutral. 1% for the Planet member.&#10;&#10;Every credential is published. Find out more at krystal.uk." data-caption-fb="Most hosting companies say they are green. Very few can prove it.&#10;&#10;Greenwashing in the hosting industry is common because the language is vague and the verification is optional. Offsetting with generic tree-planting credits is not the same as running on renewable energy. Claiming 'sustainable' without a named certification is a marketing decision, not an environmental one.&#10;&#10;Krystal's credentials are specific, third-party verified and publicly available. B Corp certified. 100% renewable energy. Gold Standard carbon-neutral. 1% for the Planet member.&#10;&#10;If your current hosting provider cannot name its energy source, that is worth knowing.&#10;&#10;Find out more at krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-cam-feel">Static</span><span class="ev-tt">TT</span><span class="evcl">Campaign · Feel ·</span><span class="evt">The greenwashing problem in hosting</span><span class="evm">Boosted cold</span></div>
+    </div>
     <div class="dc"><div class="dn">03</div></div>
     <div class="dc we"><div class="dn">04</div></div><div class="dc we"><div class="dn">05</div></div>
     <!-- Row 2 -->
     <div class="dc"><div class="dn">06</div></div>
-    <div class="dc"><div class="dn">07</div>
-    </div>
+    <div class="dc"><div class="dn">07</div></div>
     <div class="dc"><div class="dn">08</div>
       <div class="ev p1" data-chip="jul-p1" data-caption="Fast is not a feeling. It is a number.&#10;&#10;PUE 1.10 — that is Krystal's Power Usage Effectiveness ratio. The industry average sits above 1.5. NVMe SSDs across all plans. 99.9% uptime SLA with a track record behind it.&#10;&#10;Swipe through to see what high-performance hosting actually looks like — and why ethical infrastructure and fast infrastructure are the same thing.&#10;&#10;See the full benchmarks at krystal.uk." data-hashtags="#WebHosting #SitePerformance #NVMe #UptimeSLA #UKHosting #EthicalTech #WebDev" data-fmt="Carousel" data-channels="IG,LinkedIn"  data-caption-ig="Speed without proof is just a claim.&#10;&#10;PUE 1.10. That is Krystal's Power Usage Effectiveness ratio. The industry average sits above 1.5. NVMe SSDs across all plans. 99.9% uptime SLA with a verified track record.&#10;&#10;Swipe to see what high-performance hosting actually looks like.&#10;&#10;Full benchmarks at krystal.uk." data-caption-li="Performance metrics matter. Here are Krystal's.&#10;&#10;PUE 1.10 against an industry average above 1.5. NVMe SSD storage across all plans. 99.9% uptime SLA backed by a published track record.&#10;&#10;High-performance and ethical infrastructure are not a trade-off. The benchmarks show both are achievable.&#10;&#10;Full breakdown at krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-p1">Carousel</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Performance</div></div><span class="evt">Speed benchmark with proof</span><span class="evm"></span></div>
     </div>
     <div class="dc"><div class="dn">09</div></div>
     <div class="dc"><div class="dn">10</div>
-      <div class="ev p2" data-chip="jul-p2" data-caption="Krystal has helped plant over 5 million trees through named reforestation projects, verified via Gold Standard — the same certification used by the United Nations.&#10;&#10;This is not a generic 'we plant trees' claim. It is a specific commitment to specific partners, with publicly verifiable data. Because if you cannot name it, it does not count.&#10;&#10;Read the full breakdown at krystal.uk/environment." data-hashtags="#Reforestation #GoldStandard #BCorpUK #SustainableBusiness #1PercentForThePlanet #GreenHosting #ClimateAction" data-fmt="Static" data-channels="IG,Facebook"  data-caption-ig="Over five million trees. Named partners. Verified data.&#10;&#10;Krystal's reforestation work is tracked through Gold Standard, the same certification framework used by the United Nations. Not a generic 'we plant trees' claim. A specific commitment, with specific partners and publicly available data.&#10;&#10;Because if you cannot name it, it does not count.&#10;&#10;krystal.uk/environment" data-caption-fb="Krystal has helped plant over five million trees through named reforestation partners, all verified through Gold Standard, the same certification used by the United Nations.&#10;&#10;This is not a generic environmental pledge. It is a specific commitment to specific projects, with live tracking data that anyone can access.&#10;&#10;Environmental claims should be verifiable. If a company cannot tell you exactly which partners they work with, which projects they fund and how the impact is measured, that is worth asking about.&#10;&#10;Read the full breakdown at krystal.uk/environment."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-p2">Static</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">Reforestation partner spotlight</span><span class="evm"></span></div></div>
+      <div class="ev p2" data-chip="jul-p2" data-caption="Krystal has helped plant over 5 million trees through named reforestation projects, verified via Gold Standard — the same certification used by the United Nations.&#10;&#10;This is not a generic 'we plant trees' claim. It is a specific commitment to specific partners, with publicly verifiable data. Because if you cannot name it, it does not count.&#10;&#10;Read the full breakdown at krystal.uk/environment." data-hashtags="#Reforestation #GoldStandard #BCorpUK #SustainableBusiness #1PercentForThePlanet #GreenHosting #ClimateAction" data-fmt="Static" data-channels="IG,Facebook"  data-caption-ig="Over five million trees. Named partners. Verified data.&#10;&#10;Krystal's reforestation work is tracked through Gold Standard, the same certification framework used by the United Nations. Not a generic 'we plant trees' claim. A specific commitment, with specific partners and publicly available data.&#10;&#10;Because if you cannot name it, it does not count.&#10;&#10;krystal.uk/environment" data-caption-fb="Krystal has helped plant over five million trees through named reforestation partners, all verified through Gold Standard, the same certification used by the United Nations.&#10;&#10;This is not a generic environmental pledge. It is a specific commitment to specific projects, with live tracking data that anyone can access.&#10;&#10;Environmental claims should be verifiable. If a company cannot tell you exactly which partners they work with, which projects they fund and how the impact is measured, that is worth asking about.&#10;&#10;Read the full breakdown at krystal.uk/environment."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-p2">Static</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">Reforestation partner spotlight</span><span class="evm"></span></div>
+    </div>
     <div class="dc we"><div class="dn">11</div></div><div class="dc we"><div class="dn">12</div></div>
     <!-- Row 3 -->
     <div class="dc"><div class="dn">13</div></div>
     <div class="dc"><div class="dn">14</div>
       <div class="ev cam" data-chip="jul-cam-bel" data-cta="krystal.uk/hosting-for-founders" data-cta-hint="Emma landing page — believe" data-caption="Verified is not the same as claimed.&#10;&#10;Swipe to see what Krystal's environmental credentials actually look like — and how to check them yourself.&#10;&#10;B Corp certified. 100% renewable energy. Gold Standard carbon-neutral. 1% for the Planet member. 5 million trees planted through named partners with live data.&#10;&#10;This is what backing your claims looks like.&#10;&#10;See the full breakdown at krystal.uk/environment." data-hashtags="#BCorp #BCorpCertified #RenewableEnergy #GoldStandard #SustainableHosting #EthicalBusiness #WebHosting" data-fmt="Carousel" data-channels="IG,LinkedIn"  data-caption-ig="Verified is not the same as claimed.&#10;&#10;Swipe to see what Krystal's environmental credentials actually look like and how you can check them yourself.&#10;&#10;B Corp certified. 100% renewable energy. Gold Standard carbon-neutral. 1% for the Planet member. Over five million trees planted through named partners with live data.&#10;&#10;This is what backing your claims looks like.&#10;&#10;Full breakdown at krystal.uk/environment." data-caption-li="There is a meaningful difference between claiming sustainability and verifying it.&#10;&#10;Krystal holds B Corp certification, Gold Standard carbon-neutral certification and 1% for the Planet membership. The data behind every claim is publicly available and independently verified.&#10;&#10;Five million trees planted through named reforestation projects, tracked via live data. 100% renewable energy sourced and certified.&#10;&#10;If you want to assess a hosting provider's environmental credentials, here is what to look for and how to check.&#10;&#10;Full breakdown at krystal.uk/environment."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-cam-bel">Carousel</span><span class="evcl">Campaign · Believe ·</span><span class="evt">What verified sustainability actually looks like</span><span class="evm">Boosted warm</span></div>
     </div>
-    <div class="dc"><div class="dn">15</div>
-    </div>
+    <div class="dc"><div class="dn">15</div></div>
     <div class="dc"><div class="dn">16</div>
       <div class="ev p3" data-chip="jul-p3" data-fmt="Reel" data-caption="What does it feel like when your hosting company actually picks up the phone?&#10;&#10;[Add customer quote here — pull from Trustpilot or customer interview.]&#10;&#10;Real people. Real answers. No scripts, no ticket queues, no holding music. UK-based support rated 4.9 on Trustpilot.&#10;&#10;Read more reviews at trustpilot.com/review/krystal.uk." data-hashtags="#CustomerSupport #WebHosting #Trustpilot #UKHosting #SmallBusiness #RealSupport #HumanFirst" data-fmt="Reel" data-channels="IG,LinkedIn"  data-caption-ig="This is what support actually looks like.&#10;&#10;[Add customer quote here. Pull from Trustpilot. Choose one that speaks to a real issue resolved quickly.]&#10;&#10;UK-based. 4.9 on Trustpilot. Real people, no scripts.&#10;&#10;Read more at trustpilot.com/review/krystal.uk." data-caption-li="Support quality is often the thing that tips a hosting decision.&#10;&#10;Here is what Krystal customers say about it.&#10;&#10;[Add customer quote from Trustpilot. Choose one relevant to a technical issue resolved well.]&#10;&#10;UK-based support team. Rated 4.9 on Trustpilot. No ticket queues, no scripted responses.&#10;&#10;Read reviews at trustpilot.com/review/krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-p3">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Human support</div></div><span class="evt">Trustpilot support review</span><span class="evm"></span></div>
     </div>
@@ -516,8 +529,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
     <div class="dc we"><div class="dn">18</div></div><div class="dc we"><div class="dn">19</div></div>
     <!-- Row 4 -->
     <div class="dc"><div class="dn">20</div></div>
-    <div class="dc"><div class="dn">21</div>
-    </div>
+    <div class="dc"><div class="dn">21</div></div>
     <div class="dc"><div class="dn">22</div>
       <div class="ev p4" data-chip="jul-p4" data-caption="Hosting, honestly.&#10;&#10;Most providers offer a low introductory rate and quietly double it at renewal. You find out when the invoice arrives.&#10;&#10;Krystal's renewal pricing is the same as the price you signed up on. Published. Transparent. No asterisks. If it changes, you will hear about it in advance.&#10;&#10;This is the first post in Hosting, honestly — a series where we talk about the parts of the industry no one else wants to discuss.&#10;&#10;See our pricing at krystal.uk/pricing." data-hashtags="#HostingHonestly #TransparentPricing #WebHosting #EthicalBusiness #UKHosting #SmallBusinessUK" data-fmt="Static" data-channels="IG,LinkedIn"  data-caption-ig="Hosting, honestly.&#10;&#10;Most providers offer a low introductory rate and quietly double it at renewal. You find out when the invoice arrives.&#10;&#10;Krystal's renewal pricing is the same as the price you signed up on. Published. Transparent. No asterisks.&#10;&#10;This is the first post in Hosting, honestly, a series where we talk about the parts of the industry no one else wants to discuss.&#10;&#10;See pricing at krystal.uk/pricing." data-caption-li="Something the hosting industry does not talk about enough: renewal pricing.&#10;&#10;A low introductory rate followed by a significant increase at renewal is a common practice. Most customers only find out when the invoice lands.&#10;&#10;At Krystal, the renewal price is the same as the price you signed up on. It is published. If it ever changes, you will be told in advance.&#10;&#10;This is the first post in Hosting, honestly, a series covering the parts of the industry most providers would rather not discuss.&#10;&#10;See Krystal's pricing at krystal.uk/pricing."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-p4">Static</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Independence</div></div><span class="evt">Open renewal pricing</span><span class="evm"></span></div>
     </div>
@@ -527,11 +539,14 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
     </div>
     <div class="dc we"><div class="dn">25</div></div><div class="dc we"><div class="dn">26</div></div>
     <!-- Row 5 -->
-    <div class="dc"><div class="dn">27</div></div><div class="dc"><div class="dn">28</div>
-      <div class="ev cam" data-chip="jul-cam-know" data-cta="krystal.uk/hosting-for-founders" data-cta-hint="Emma landing page — know" data-caption="Here is what you get with Krystal hosting.&#10;&#10;100% renewable energy. B Corp certified. 99.9% uptime SLA. NVMe SSD storage. UK-based human support — real people, no scripts. Pricing that does not change at renewal without warning. Everything shown ex VAT.&#10;&#10;Built for founders who care about where their money goes.&#10;&#10;Plans from £X/month. See everything at krystal.uk." data-hashtags="#WebHosting #EthicalHosting #BCorpUK #UKHosting #SustainableHosting #SmallBusiness #StartupUK" data-fmt="Static" data-channels="IG,Facebook"  data-caption-ig="Here is what you get with Krystal.&#10;&#10;100% renewable energy. B Corp certified. 99.9% uptime SLA. NVMe SSD storage. UK-based human support. Pricing that does not change at renewal without warning.&#10;&#10;Everything shown ex VAT.&#10;&#10;Plans from £7/month ex VAT. See everything at krystal.uk." data-caption-fb="Here is everything you get with Krystal hosting.&#10;&#10;100% renewable energy, independently verified. B Corp certified. 99.9% uptime SLA. NVMe SSD storage across all plans. UK-based support from real people, no scripts. Renewal pricing that stays the same as your sign-up rate.&#10;&#10;Every price shown ex VAT. No surprises at renewal.&#10;&#10;If you have been looking for a hosting company that matches what you stand for as a business, this is what that looks like.&#10;&#10;Explore plans at krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-cam-know">Static</span><span class="evcl">Campaign · Know ·</span><span class="evt">Here's what you get</span><span class="evm">Paid retargeted</span></div></div>
-    <div class="dc"><div class="dn">29</div></div><div class="dc"><div class="dn">30</div></div>
+    <div class="dc"><div class="dn">27</div></div>
+    <div class="dc"><div class="dn">28</div>
+      <div class="ev cam" data-chip="jul-cam-know" data-cta="krystal.uk/hosting-for-founders" data-cta-hint="Emma landing page — know" data-caption="Here is what you get with Krystal hosting.&#10;&#10;100% renewable energy. B Corp certified. 99.9% uptime SLA. NVMe SSD storage. UK-based human support — real people, no scripts. Pricing that does not change at renewal without warning. Everything shown ex VAT.&#10;&#10;Built for founders who care about where their money goes.&#10;&#10;Plans from £X/month. See everything at krystal.uk." data-hashtags="#WebHosting #EthicalHosting #BCorpUK #UKHosting #SustainableHosting #SmallBusiness #StartupUK" data-fmt="Static" data-channels="IG,Facebook"  data-caption-ig="Here is what you get with Krystal.&#10;&#10;100% renewable energy. B Corp certified. 99.9% uptime SLA. NVMe SSD storage. UK-based human support. Pricing that does not change at renewal without warning.&#10;&#10;Everything shown ex VAT.&#10;&#10;Plans from £7/month ex VAT. See everything at krystal.uk." data-caption-fb="Here is everything you get with Krystal hosting.&#10;&#10;100% renewable energy, independently verified. B Corp certified. 99.9% uptime SLA. NVMe SSD storage across all plans. UK-based support from real people, no scripts. Renewal pricing that stays the same as your sign-up rate.&#10;&#10;Every price shown ex VAT. No surprises at renewal.&#10;&#10;If you have been looking for a hosting company that matches what you stand for as a business, this is what that looks like.&#10;&#10;Explore plans at krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-cam-know">Static</span><span class="evcl">Campaign · Know ·</span><span class="evt">Here's what you get</span><span class="evm">Paid retargeted</span></div>
+    </div>
+    <div class="dc"><div class="dn">29</div></div>
+    <div class="dc"><div class="dn">30</div></div>
     <div class="dc"><div class="dn">31</div></div>
-    <div class="dc em"></div><div class="dc em"></div>
+        <div class="dc em"></div>    <div class="dc em"></div>
   </div></div>
 </div>
 
@@ -652,60 +667,115 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 
 <!-- ════════ ALWAYS-ON ADS ════════ -->
 <div class="pane" id="pane-ads">
-  <p class="ao-intro">Four ads running continuously throughout all four months, regardless of which persona campaign is active. Each is tied to one persona, one offer, one hook — and drives to a dedicated landing page.</p>
-  <div class="ao-grid">
-    <div class="ao-card">
-      <div class="ao-name">Emma</div>
-      <div class="ao-type">Ethical entrepreneur</div>
-      <div class="ao-offer">Website hosting + managed WordPress + domains</div>
-      <div class="ao-hook">"You're building something that means something. Your hosting should too."</div>
-      <div class="ao-tags"><span class="tg tig">IG</span><span class="tg tfb">Facebook</span><span class="tg tgt">Lookalike: ethical founders</span></div>
-      <div class="ao-copy">
-        <div class="ao-copy-label">Ad copy</div>
-        <div class="ao-copy-hl">Hosting for the business you're building</div>
-        <div class="ao-copy-body">You care where your money goes. Your hosting should too. Krystal is B Corp certified, runs on 100% verified renewable energy and charges the same price at renewal as the day you signed up. UK-based support from real people. Everything shown ex VAT.</div>
-        <div class="ao-copy-cta">krystal.uk/hosting-for-founders</div>
+  <p class="ao-intro">Four always-on dark ads running continuously across all months, regardless of which persona campaign is active. Two ad options per persona — each targets a different pain point and audience segment.</p>
+  <div class="ao-persona-tabs">
+    <button class="ao-ptab active" onclick="showPersona('emma')">Emma</button>
+    <button class="ao-ptab" onclick="showPersona('james')">James</button>
+    <button class="ao-ptab" onclick="showPersona('alex')">Alex</button>
+    <button class="ao-ptab" onclick="showPersona('sarah')">Sarah</button>
+  </div>
+  <!-- EMMA -->
+  <div class="ao-persona active" id="aop-emma">
+    <p class="ao-pdesc">Ethical entrepreneur. IG and Facebook primary. Her biggest documented pains: greenwashing, hidden renewal hikes, and support that feels scripted. These two ads attack her highest-friction moments directly.</p>
+    <div class="ao-grid">
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Leads with her exact documented quote. Values alignment is the primary decision driver for Emma — this ad earns trust before it sells anything.</div>
+        <div class="ao-name">Emma — Ad 1</div><div class="ao-type">Ethical entrepreneur</div>
+        <div class="ao-offer">Website hosting + managed WordPress + domains</div>
+        <div class="ao-hook">"I'm not greenwashing my own customers. I'm not going to accept it from my suppliers either."</div>
+        <div class="ao-tags"><span class="tg tig">IG</span><span class="tg tfb">Facebook</span><span class="tg tgt">Lookalike: ethical founders</span><span class="tg tgt">Interest: B Corp, sustainable business</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">Hosting for the business you're building.</div><div class="ao-copy-body">You care where your money goes. Your hosting should too. Krystal is B Corp certified, runs on 100% verified renewable energy and charges the same price at renewal as the day you signed up. UK-based support from real people. Everything shown ex VAT.</div><div class="ao-copy-cta">krystal.io/hosting-for-founders</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">Verified sustainable hosting. Not just a green logo.</div></div>
+      </div>
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Renewal stings are Emma's second documented pain point. This ad names the exact mechanism — £0.99 bait / £24.99 trap — and positions Krystal's transparent pricing as the direct antidote.</div>
+        <div class="ao-name">Emma — Ad 2</div><div class="ao-type">Ethical entrepreneur</div>
+        <div class="ao-offer">Domains + website hosting</div>
+        <div class="ao-hook">"Hidden fees. Renewal stings. Support that feels scripted and unhelpful."</div>
+        <div class="ao-tags"><span class="tg tig">IG</span><span class="tg tfb">Facebook</span><span class="tg tgt">Interest: small business, side hustle, e-commerce</span><span class="tg tgt">Retargeting: visited /hosting, no signup</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">Your hosting shouldn't have a catch.</div><div class="ao-copy-body">Most domain registrars charge £0.99 to get you in, then £24.99 every year after. Krystal charges the same price at renewal as day one. No asterisks. No renewal trap. B Corp certified, 100% renewable energy, UK-based support from real people.</div><div class="ao-copy-cta">krystal.io/honest-hosting</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">£0.99 today. £24.99 next year. Not how we do it.</div></div>
       </div>
     </div>
-    <div class="ao-card">
-      <div class="ao-name">James</div>
-      <div class="ao-type">Agency lead</div>
-      <div class="ao-offer">Reseller / agency offer</div>
-      <div class="ao-hook">"Your clients are asking about ESG. Your hosting should have answers."</div>
-      <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Agency / digital marketing</span></div>
-      <div class="ao-copy">
-        <div class="ao-copy-label">Ad copy</div>
-        <div class="ao-copy-hl">The hosting partner agencies can actually stand behind</div>
-        <div class="ao-copy-body">Your clients are asking about ESG credentials. Your hosting choice is part of that answer. Krystal is B Corp certified, 100% renewable energy verified and offers reseller packages built for agencies. UK-based support. Renewal pricing that does not change without notice.</div>
-        <div class="ao-copy-cta">krystal.uk/agency-hosting</div>
+  </div>
+  <!-- JAMES -->
+  <div class="ao-persona" id="aop-james">
+    <p class="ao-pdesc">Agency lead. LinkedIn primary. James is commercially responsible and technically accountable — if hosting fails, he gets the call. These two ads hit his highest-stakes anxieties: ESG exposure in client pitches and reputational risk from unreliable infrastructure.</p>
+    <div class="ao-grid">
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">ESG questionnaires in agency pitches is the sharpest documented tension for James. This ad reframes hosting as a client-facing risk rather than a back-office decision — the angle most likely to stop his scroll on LinkedIn.</div>
+        <div class="ao-name">James — Ad 1</div><div class="ao-type">Agency lead</div>
+        <div class="ao-offer">Reseller / agency offer</div>
+        <div class="ao-hook">"My clients are starting to ask where their data lives and what powers it."</div>
+        <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Job title: MD, Head of Digital, Technical Director</span><span class="tg tgt">Interest: agency, digital marketing</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">The hosting partner agencies can actually stand behind.</div><div class="ao-copy-body">Your clients are asking about ESG credentials. Your hosting choice is part of that answer. Krystal is B Corp certified, 100% renewable energy verified and offers reseller packages built for agencies. UK-based support. Renewal pricing that does not change without notice.</div><div class="ao-copy-cta">krystal.io/agency-hosting</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">Your clients are asking about ESG. Your hosting should have answers.</div></div>
+      </div>
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Independence and stability are the counter-narrative to big-host consolidation risk — a growing anxiety for agency leads watching GoDaddy, EIG and others absorb competitors. Krystal's 20+ year track record is the credibility proof no acquired host can match.</div>
+        <div class="ao-name">James — Ad 2</div><div class="ao-type">Agency lead</div>
+        <div class="ao-offer">Reseller / managed WordPress</div>
+        <div class="ao-hook">"Big hosts keep getting acquired. Support gets worse. Pricing becomes unpredictable."</div>
+        <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Interest: WordPress, WooCommerce, web professionals</span><span class="tg tgt">Lookalike: existing agency customers</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">Not owned by a private equity firm. Not going anywhere.</div><div class="ao-copy-body">The big hosts keep getting acquired. Support gets worse. Pricing gets unpredictable. Krystal has been independently run since 2002 with no investors and no exit plan. The same team. The same values. Transparent pricing, UK-based support, and a B Corp certification that means something.</div><div class="ao-copy-cta">krystal.io/agency-hosting</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">Privately owned since 2002. Still independent. No private equity.</div></div>
       </div>
     </div>
-    <div class="ao-card">
-      <div class="ao-name">Alex</div>
-      <div class="ao-type">Climate-conscious decision-maker</div>
-      <div class="ao-offer">Managed Cloud / enterprise</div>
-      <div class="ao-hook">"Your hosting is part of your supply chain. Make sure it can prove it."</div>
-      <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">B Corp / sustainability / climate tech</span></div>
-      <div class="ao-copy">
-        <div class="ao-copy-label">Ad copy</div>
-        <div class="ao-copy-hl">Your supply chain includes your hosting. Make sure it can prove its credentials.</div>
-        <div class="ao-copy-body">Krystal is B Corp certified, Gold Standard carbon-neutral and runs on 100% verified renewable energy. Managed Cloud infrastructure for organisations that need performance and provenance. Every environmental claim is independently verified and publicly available.</div>
-        <div class="ao-copy-cta">krystal.uk/sustainable-hosting</div>
+  </div>
+  <!-- ALEX -->
+  <div class="ao-persona" id="aop-alex">
+    <p class="ao-pdesc">Climate-conscious decision-maker. LinkedIn primary, IG support. Alex is in organisations where ESG credibility is non-negotiable and greenwashing is the fastest way to lose trust. These two ads match that scrutiny directly.</p>
+    <div class="ao-grid">
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Supply chain framing is the most powerful angle for Alex — it reframes hosting from a tech choice to a procurement and compliance decision. Directly aligned to the "organisations that need performance and provenance" positioning in the roadmap.</div>
+        <div class="ao-name">Alex — Ad 1</div><div class="ao-type">Climate-conscious decision-maker</div>
+        <div class="ao-offer">Managed Cloud / enterprise</div>
+        <div class="ao-hook">"Everything in our supply chain has to stand up to scrutiny. Hosting is no different."</div>
+        <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">B Corp / sustainability / climate tech</span><span class="tg tgt">Job title: Head of Sustainability, CTO, COO</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">Your supply chain includes your hosting. Make sure it can prove its credentials.</div><div class="ao-copy-body">Krystal is B Corp certified, Gold Standard carbon-neutral and runs on 100% verified renewable energy. Managed Cloud infrastructure for organisations that need performance and provenance. Every environmental claim is independently verified and publicly available.</div><div class="ao-copy-cta">krystal.io/sustainable-hosting</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">Most sustainability audits miss hosting. Yours doesn't have to.</div></div>
+      </div>
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Vague green claims are Alex's immediate red flag. Leading with hard numbers (PUE 1.10, Gold Standard, named tree-planting partners) signals Krystal operates at the same standard Alex holds their own organisation to — and pre-empts the greenwashing objection before it forms.</div>
+        <div class="ao-name">Alex — Ad 2</div><div class="ao-type">Climate-conscious decision-maker</div>
+        <div class="ao-offer">Managed Cloud / enterprise</div>
+        <div class="ao-hook">"Vague sustainability language with no proof is an immediate disqualifier."</div>
+        <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tig">IG</span><span class="tg tgt">Interest: B Corp, ESG, net zero, climate tech</span><span class="tg tgt">Retargeting: visited /cloud, no signup</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">PUE 1.10. Gold Standard certified. 5 million trees via named partners. Show us the receipts — we have them.</div><div class="ao-copy-body">Krystal doesn't do vague sustainability language. Every claim is independently verified, publicly available and backed by named partners. If your hosting provider can't answer the same questions, that's a supply chain gap worth closing.</div><div class="ao-copy-cta">krystal.io/sustainable-hosting</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">"Eco-friendly hosting." What does that mean? Krystal can tell you exactly.</div></div>
       </div>
     </div>
-    <div class="ao-card">
-      <div class="ao-name">Sarah</div>
-      <div class="ao-type">Developer / technical lead</div>
-      <div class="ao-offer">VPS / Krystal Cloud</div>
-      <div class="ao-hook">"Just show me the numbers. PUE, uptime, latency."</div>
-      <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Developers / tech leads</span></div>
-      <div class="ao-copy">
-        <div class="ao-copy-label">Ad copy</div>
-        <div class="ao-copy-hl">The benchmarks. Not the marketing.</div>
-        <div class="ao-copy-body">PUE 1.10. NVMe SSD. 99.9% uptime SLA. UK data centres. Krystal Cloud and VPS hosting for developers who want the numbers, not the pitch. Fully managed or self-managed. Scales with your infrastructure.</div>
-        <div class="ao-copy-cta">krystal.uk/developer-hosting</div>
+  </div>
+  <!-- SARAH -->
+  <div class="ao-persona" id="aop-sarah">
+    <p class="ao-pdesc">Developer / technical lead. LinkedIn primary. Sarah decides on evidence, not marketing. Full campaign is queued for Q2 2026 per the strategic roadmap — these two ads are the always-on dark layer to run ahead of that push.</p>
+    <div class="ao-grid">
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Sarah's documented quote is "just show me the numbers." This ad does exactly that — PUE, NVMe, SLA, UK datacentres — in the headline, without padding. The most direct match to her decision-making mode.</div>
+        <div class="ao-name">Sarah — Ad 1</div><div class="ao-type">Developer / technical lead</div>
+        <div class="ao-offer">VPS / Krystal Cloud</div>
+        <div class="ao-hook">"Just show me the numbers. PUE, uptime, latency. I'll judge from there."</div>
+        <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Developers / tech leads</span><span class="tg tgt">Job title: Software Engineer, DevOps, CTO</span><span class="tg tq2">Full campaign: Q2 2026</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">The benchmarks. Not the marketing.</div><div class="ao-copy-body">PUE 1.10. NVMe SSD. 99.9% uptime SLA. UK data centres. Krystal Cloud and VPS hosting for developers who want the numbers, not the pitch. Fully managed or self-managed. Scales with your infrastructure.</div><div class="ao-copy-cta">krystal.io/developer-hosting</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">Infrastructure specs, not marketing copy. Here's what you actually get.</div></div>
       </div>
-      <div class="q2tag">Full campaign: October 2026</div>
+      <div class="ao-card">
+        <div class="ao-why-label">WHY THIS ONE</div>
+        <div class="ao-why">Pricing transparency is a pain shared across all personas but lands hardest with developers who manage budgets line by line. "Day one price = day 366 price" is a concrete, verifiable claim that builds trust with a sceptical technical audience without asking them to take anything on faith.</div>
+        <div class="ao-name">Sarah — Ad 2</div><div class="ao-type">Developer / technical lead</div>
+        <div class="ao-offer">VPS / Krystal Cloud</div>
+        <div class="ao-hook">"Introductory rates that double at renewal. Hidden costs. Budget surprises."</div>
+        <div class="ao-tags"><span class="tg tli">LinkedIn</span><span class="tg tgt">Interest: DevOps, cloud infrastructure, SaaS</span><span class="tg tgt">Retargeting: visited /vps or /cloud, no signup</span><span class="tg tq2">Full campaign: Q2 2026</span></div>
+        <div class="ao-copy"><div class="ao-copy-label">Ad copy</div><div class="ao-copy-hl">The price on day one is the price on day 366.</div><div class="ao-copy-body">Krystal doesn't do introductory rates that double at renewal. Every price is shown ex VAT from the start. VPS and Cloud hosting for developers and technical leads who are tired of budgeting for the bait-and-switch. Independently run since 2002. No private equity.</div><div class="ao-copy-cta">krystal.io/vps</div></div>
+        <div class="ao-copy ao-variant"><div class="ao-copy-label">Variant headline</div><div class="ao-copy-hl">No renewal trap. No asterisks. Just the price you agreed to.</div></div>
+      </div>
     </div>
   </div>
 </div>
@@ -745,6 +815,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 </div>
 
 <script>
+function showPersona(id){
+  document.querySelectorAll('.ao-ptab').forEach((b,i)=>{b.classList.toggle('active',['emma','james','alex','sarah'][i]===id);});
+  document.querySelectorAll('.ao-persona').forEach(p=>{p.classList.toggle('active',p.id==='aop-'+id);});
+}
 function show(id){
   ['jul','aug','sep','ads'].forEach((t,i)=>{
     document.querySelectorAll('.tab')[i].classList.toggle('active',t===id);
