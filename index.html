@@ -387,6 +387,15 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
   letter-spacing:.6px;text-transform:uppercase;cursor:pointer;transition:background .15s;}
 .save-layout-btn:hover{background:rgba(255,255,255,.22);}
 .panel-title[contenteditable]:focus{outline:none;border-bottom:2px solid rgba(31,69,92,.3);}
+
+/* ── Channel tags on chips ── */
+.ev-channels{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px;}
+.ev-ch{font-size:8px;font-weight:700;padding:1px 5px;border-radius:3px;letter-spacing:.3px;text-transform:uppercase;}
+.ev-ch-ig{background:#FCE4EC;color:#AD1457;}
+.ev-ch-li{background:#E3F2FD;color:#1565C0;}
+.ev-ch-fb{background:#E8EAF6;color:#3949AB;}
+.ev-ch-tt{background:#000;color:#fff;}
+.ev-ch-web{background:#F3F4F6;color:#374151;}
 </style>
 </head>
 <body>
@@ -537,7 +546,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
     </div>
     <div class="dc"><div class="dn">23</div></div>
     <div class="dc"><div class="dn">24</div>
-      <div class="ev p2" data-chip="jul-ext" data-caption="This is what it actually felt like to switch.&#10;&#10;[Emma founder-voice script — direct to camera or VO over b-roll. Talk about why the hosting choice matters to the business, not just the tech. Genuine, unscripted tone.]&#10;&#10;Krystal is the hosting company we chose because it matches what we stand for.&#10;&#10;Find out more at krystal.uk." data-hashtags="#FounderVoice #EthicalHosting #BCorpUK #SustainableBusiness #SmallBusinessUK #UKHosting" data-fmt="Reel" data-channels="IG,LinkedIn"  data-caption-ig="[Direct to camera or VO over b-roll. Founder speaking in first person, natural tone.]&#10;&#10;When I started looking at hosting, I thought it was a technical decision. It turned out to be a values decision too.&#10;&#10;I wanted to work with a company that could account for its environmental impact, was independently certified and treated its customers like adults.&#10;&#10;That is why we chose Krystal.&#10;&#10;Find out more at krystal.uk." data-caption-li="[Founder voice, first person. Direct to camera or written post.]&#10;&#10;The hosting choice was not just about performance or price. It was about whether the company we were paying matched what we were building.&#10;&#10;Krystal is B Corp certified, runs on 100% verified renewable energy and publishes every environmental credential. The support team is UK-based and picks up the phone.&#10;&#10;For a business built on values, working with a hosting provider that shares them is not a nice-to-have. It is the baseline.&#10;&#10;krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-ext">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">Emma-style founder voice (campaign extension)</span><span class="evm"></span></div>
+      <div class="ev p2" data-chip="jul-ext" data-channels-override="TikTok,IG,LinkedIn" data-caption="This is what it actually felt like to switch.&#10;&#10;[Emma founder-voice script — direct to camera or VO over b-roll. Talk about why the hosting choice matters to the business, not just the tech. Genuine, unscripted tone.]&#10;&#10;Krystal is the hosting company we chose because it matches what we stand for.&#10;&#10;Find out more at krystal.uk." data-hashtags="#FounderVoice #EthicalHosting #BCorpUK #SustainableBusiness #SmallBusinessUK #UKHosting" data-fmt="Reel" data-channels="TikTok,IG,LinkedIn"  data-caption-ig="[Direct to camera or VO over b-roll. Founder speaking in first person, natural tone.]&#10;&#10;When I started looking at hosting, I thought it was a technical decision. It turned out to be a values decision too.&#10;&#10;I wanted to work with a company that could account for its environmental impact, was independently certified and treated its customers like adults.&#10;&#10;That is why we chose Krystal.&#10;&#10;Find out more at krystal.uk." data-caption-li="[Founder voice, first person. Direct to camera or written post.]&#10;&#10;The hosting choice was not just about performance or price. It was about whether the company we were paying matched what we were building.&#10;&#10;Krystal is B Corp certified, runs on 100% verified renewable energy and publishes every environmental credential. The support team is UK-based and picks up the phone.&#10;&#10;For a business built on values, working with a hosting provider that shares them is not a nice-to-have. It is the baseline.&#10;&#10;krystal.uk."onclick="openPanel(this)"><span class="evfmt" id="fmt-jul-ext">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">Emma-style founder voice (campaign extension)</span><span class="evm"></span></div>
     </div>
     <div class="dc we"><div class="dn">25</div></div><div class="dc we"><div class="dn">26</div></div>
     <!-- Row 5 -->
@@ -615,7 +624,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
     <div class="dc we"><div class="dn">29</div></div><div class="dc we"><div class="dn">30</div></div>
     <!-- Row 6 -->
     <div class="dc"><div class="dn">31</div>
-      <div class="ev p2" data-chip="aug-ext" data-caption="What does it actually look like to move your client hosting to Krystal?&#10;&#10;[Agency team member or Krystal team voice. Walk through the onboarding experience, the reseller setup and what the first 30 days looks like. Keep it real.]&#10;&#10;Find out more at krystal.io/agency-hosting." data-hashtags="#AgencyHosting #BCorpUK #WebAgency #EthicalHosting #TikTokHosting" data-fmt="Reel" data-channels="IG,LinkedIn" data-caption-ig="[Direct to camera or carousel. Agency-facing, first person, natural tone.]&#10;&#10;We switched our client hosting to Krystal because we needed a partner we could put our name next to.&#10;&#10;Here is what the first 30 days looked like.&#10;&#10;krystal.io/agency-hosting" data-caption-li="[Agency or Krystal team voice. First person, professional tone.]&#10;&#10;Moving client hosting is a decision that carries risk. Here is how we made it work.&#10;&#10;The reseller setup. The support experience. The ESG credentials we can now pass to clients with confidence.&#10;&#10;krystal.io/agency-hosting" onclick="openPanel(this)"><span class="evfmt" id="fmt-aug-ext">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">Agency relationship perspective — campaign extension</span><span class="evm"></span></div></div>
+      <div class="ev p2" data-chip="aug-ext" data-channels-override="TikTok,IG,LinkedIn" data-caption="What does it actually look like to move your client hosting to Krystal?&#10;&#10;[Agency team member or Krystal team voice. Walk through the onboarding experience, the reseller setup and what the first 30 days looks like. Keep it real.]&#10;&#10;Find out more at krystal.io/agency-hosting." data-hashtags="#AgencyHosting #BCorpUK #WebAgency #EthicalHosting #TikTokHosting" data-fmt="Reel" data-channels="TikTok,IG,LinkedIn" data-caption-ig="[Direct to camera or carousel. Agency-facing, first person, natural tone.]&#10;&#10;We switched our client hosting to Krystal because we needed a partner we could put our name next to.&#10;&#10;Here is what the first 30 days looked like.&#10;&#10;krystal.io/agency-hosting" data-caption-li="[Agency or Krystal team voice. First person, professional tone.]&#10;&#10;Moving client hosting is a decision that carries risk. Here is how we made it work.&#10;&#10;The reseller setup. The support experience. The ESG credentials we can now pass to clients with confidence.&#10;&#10;krystal.io/agency-hosting" onclick="openPanel(this)"><span class="evfmt" id="fmt-aug-ext">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">Agency relationship perspective — campaign extension</span><span class="evm"></span></div></div>
     <div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div>
   </div></div>
 </div>
@@ -678,7 +687,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
     <div class="dc we"><div class="dn">26</div></div><div class="dc we"><div class="dn">27</div></div>
     <!-- Row 5 -->
     <div class="dc"><div class="dn">28</div></div><div class="dc"><div class="dn">29</div>
-      <div class="ev p2" data-chip="sep-ext" data-caption="What does B Corp certification actually mean for a hosting company?&#10;&#10;[Founder or team member voice, direct to camera or carousel format. Break down what the B Corp assessment covers for a hosting company, why self-reporting is not the same standard and what it means for organisations that need their supply chain to hold up to scrutiny.]&#10;&#10;Learn more at krystal.io/about." data-hashtags="#BCorp #BCorpCertified #SustainableHosting #ESGHosting #GreenHosting #SupplyChain" data-fmt="Reel" data-channels="IG,LinkedIn" data-caption-ig="[Direct to camera or carousel. B Corp explained clearly.]&#10;&#10;B Corp is not a sustainability badge. It is a verified standard.&#10;&#10;Here is what it actually covers and why it matters for your hosting choice.&#10;&#10;krystal.io/about" data-caption-li="[Founder or team member POV. Professional tone.]&#10;&#10;What the B Corp certification process actually looked like for a hosting company — and what it means for organisations that need their infrastructure partners to hold up in procurement and ESG reporting.&#10;&#10;krystal.io/about" onclick="openPanel(this)"><span class="evfmt" id="fmt-sep-ext">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">B Corp deep-dive — campaign extension</span><span class="evm"></span></div></div>
+      <div class="ev p2" data-chip="sep-ext" data-channels-override="TikTok,IG,LinkedIn" data-caption="What does B Corp certification actually mean for a hosting company?&#10;&#10;[Founder or team member voice, direct to camera or carousel format. Break down what the B Corp assessment covers for a hosting company, why self-reporting is not the same standard and what it means for organisations that need their supply chain to hold up to scrutiny.]&#10;&#10;Learn more at krystal.io/about." data-hashtags="#BCorp #BCorpCertified #SustainableHosting #ESGHosting #GreenHosting #SupplyChain" data-fmt="Reel" data-channels="TikTok,IG,LinkedIn" data-caption-ig="[Direct to camera or carousel. B Corp explained clearly.]&#10;&#10;B Corp is not a sustainability badge. It is a verified standard.&#10;&#10;Here is what it actually covers and why it matters for your hosting choice.&#10;&#10;krystal.io/about" data-caption-li="[Founder or team member POV. Professional tone.]&#10;&#10;What the B Corp certification process actually looked like for a hosting company — and what it means for organisations that need their infrastructure partners to hold up in procurement and ESG reporting.&#10;&#10;krystal.io/about" onclick="openPanel(this)"><span class="evfmt" id="fmt-sep-ext">Reel</span><span class="ev-tt">TT</span><div class="evpl"><div class="evpl-dot"></div><div class="evpl-name">Environmental</div></div><span class="evt">B Corp deep-dive — campaign extension</span><span class="evm"></span></div></div>
     <div class="dc"><div class="dn">30</div></div>
     <div class="dc em"></div><div class="dc em"></div><div class="dc em"></div><div class="dc em"></div>
   </div></div>
@@ -1098,5 +1107,30 @@ window.addEventListener('DOMContentLoaded', function(){
 });
 
 </script>
+<script>
+// ── Render channel tags on chips ──────────────────────────────────────────
+(function(){
+  var map = {
+    'IG':       ['ev-ch-ig','IG'],
+    'Facebook': ['ev-ch-fb','FB'],
+    'LinkedIn': ['ev-ch-li','LI'],
+    'TikTok':   ['ev-ch-tt','TT'],
+    'Web':      ['ev-ch-web','WEB']
+  };
+  document.querySelectorAll('.ev[data-channels]').forEach(function(chip){
+    var channels = chip.dataset.channels.split(',');
+    var wrap = document.createElement('div');
+    wrap.className = 'ev-channels';
+    channels.forEach(function(ch){
+      ch = ch.trim();
+      if(!map[ch]) return;
+      var span = document.createElement('span');
+      span.className = 'ev-ch ' + map[ch][0];
+      span.textContent = map[ch][1];
+      wrap.appendChild(span);
+    });
+    chip.appendChild(wrap);
+  });
+})();
+</script>
 </body>
-</html>
