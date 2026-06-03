@@ -424,7 +424,6 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
         <a class="hdr-link-sm" href="https://docs.google.com/document/d/1GtSYSER7RLwH74ZaOVTUFezgx7W1LhK1mXb_oWe_nr4/edit" target="_blank">↗ Strategic roadmap</a>
         <a class="hdr-link-sm" href="https://docs.google.com/document/d/16M22COd_nxI5TFspQaQWG25hbyuOETMxPC_dfySNOvs/edit" target="_blank">↗ Earth Day</a>
         <a class="hdr-link-sm" href="https://docs.google.com/document/d/1X5qih1Az21SOsTbtIxCUP-ahi4E6smgZFAHQhDTovBg/edit" target="_blank">↗ BOGOF</a>
-        <a class="hdr-link-sm" href="https://docs.google.com/spreadsheets/d/1RQj_5GJ_Iw6M-MWodxRqHuiLKnx9YJLzjJyJ3WLR_08/edit?gid=1533538615#gid=1533538615" target="_blank">↗ Calendar template</a>
       </div>
     </div>
   </div>
@@ -809,6 +808,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
       <span class="panel-label">Hashtags</span>
       <div class="panel-textarea" id="panel-hashtags" style="background:#f8f9fa;border:1px solid #e2e8f0;border-radius:5px;padding:8px 10px;font-size:13px;color:#334155;min-height:50px;word-break:break-word;"></div>
     </div>
+    <div class="panel-saved" id="panel-saved" style="display:none;">Saved</div>
   </div>
 </div>
 
@@ -857,8 +857,6 @@ function openPanel(el){
   document.querySelectorAll('.fmt-btn').forEach(b=>b.classList.toggle('active',b.dataset.fmt===fmt));
   // channels — set checkboxes first, then render caption fields
   const chs = data.channels ? data.channels.split(',') : (el.dataset.channels||'').split(',');
-  document.querySelectorAll('.ch-item input').forEach(cb=>{ cb.checked = chs.includes(cb.value); });
-  renderCaptionFields();
   // status
   const st = data.status || 'draft';
   document.querySelectorAll('.status-btn').forEach(b=>b.classList.toggle('active',b.dataset.status===st));
@@ -873,14 +871,13 @@ function closePanel(){
   _chipId = null;
 }
 
-function setFmt(btn){
+function setFmt(btn){ return; //
   document.querySelectorAll('.fmt-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   if(_chipId){
     const d = getData(_chipId); d.format = btn.dataset.fmt; setData(_chipId,d);
     const badge = document.getElementById('fmt-'+_chipId);
     if(badge) badge.textContent = btn.dataset.fmt;
-    showSaved();
   }
 }
 
@@ -898,15 +895,10 @@ function autoSave(){
     const cbs   = [...document.querySelectorAll('.ch-item input:checked')].map(c=>c.value);
     d.channels  = cbs.join(',');
     setData(_chipId,d);
-    showSaved();
   }, 600);
 }
 
-function showSaved(){
-  const el = document.getElementById('panel-saved');
-  el.classList.add('show');
-  setTimeout(()=>el.classList.remove('show'), 1800);
-});
+);
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = 'krystal-content-calendar.html';
@@ -968,7 +960,6 @@ function saveLayout(){
   localStorage.setItem('k_layout', JSON.stringify(layout));
   // Also bake text changes
   saveAllChipTitles();
-  showSaved();
 }
 
 function loadLayout(){
