@@ -832,50 +832,7 @@ function setData(id,d){ localStorage.setItem('k_'+id,JSON.stringify(d)); }
 
 
 
-function renderCaptionFields(){
-  var container = document.getElementById('caption-fields');
-  if(!container) return;
-  var data = _chipId ? getData(_chipId) : {};
-  var chipEl = _chipId ? document.querySelector('[data-chip="'+_chipId+'"]') : null;
-  var defaultCap = chipEl && chipEl.dataset.caption
-    ? chipEl.dataset.caption.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')
-    : '';
 
-  // Channel-specific default captions from data attributes
-  var chDefaults = {
-    IG:       chipEl && chipEl.dataset.captionIg  ? chipEl.dataset.captionIg.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')  : defaultCap,
-    Facebook: chipEl && chipEl.dataset.captionFb  ? chipEl.dataset.captionFb.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')  : defaultCap,
-    LinkedIn: chipEl && chipEl.dataset.captionLi  ? chipEl.dataset.captionLi.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')  : defaultCap,
-    TikTok:   chipEl && chipEl.dataset.captionTt  ? chipEl.dataset.captionTt.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')  : defaultCap,
-    BlueSky:  chipEl && chipEl.dataset.captionBs  ? chipEl.dataset.captionBs.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')  : defaultCap,
-    YouTube:  chipEl && chipEl.dataset.captionYt  ? chipEl.dataset.captionYt.replace(/&#10;/g,'\n').replace(/&quot;/g,'"')  : defaultCap
-  };
-
-  var checked = [];
-  document.querySelectorAll('.ch-item input:checked').forEach(function(c){ checked.push(c.value); });
-
-  var chLabels = {IG:'Instagram',Facebook:'Facebook',LinkedIn:'LinkedIn',TikTok:'TikTok',BlueSky:'BlueSky',YouTube:'YouTube','Landing page':'Landing page'};
-
-  if(checked.length === 0){
-    container.innerHTML = '<p style="font-size:11px;color:var(--slate);margin-top:6px;">Select a channel above to add a caption.</p>';
-    return;
-  }
-
-  var html2 = '';
-  for(var i=0;i<checked.length;i++){
-    var ch = checked[i];
-    var fallback = chDefaults[ch] !== undefined ? chDefaults[ch] : defaultCap;
-    // Use saved value only if it was actually edited (differs from the generic fallback)
-    var rawSaved = (data.captions && data.captions[ch]) ? data.captions[ch] : null;
-    var saved = (rawSaved && rawSaved !== defaultCap) ? rawSaved : fallback;
-    var label = chLabels[ch] || ch;
-    html2 += '<div class="ch-caption-wrap">'
-           + '<span class="ch-caption-label">'+label+'</span>'
-           + '<textarea class="panel-textarea ch-caption-ta" data-ch="'+ch+'" oninput="autoSave()" style="margin-top:0;">'+saved+'</textarea>'
-           + '</div>';
-  }
-  container.innerHTML = html2;
-}
 
 function openPanel(el){
   if(_isDragging) return;
