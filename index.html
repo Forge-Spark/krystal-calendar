@@ -115,6 +115,9 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 .mo-body{flex:1;min-width:200px;}
 .mo-camp{font-size:13px;font-weight:700;font-style:italic;color:var(--dark);margin-bottom:4px;}
 .mo-desc{font-size:11.5px;color:var(--slate);line-height:1.7;}
+.mo-desc-with-avatar{display:flex;align-items:flex-start;gap:12px;}
+.mo-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid var(--border);background:#fff;}
+.mo-desc-copy{flex:1;min-width:0;}
 .mo-pills{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;}
 .mo-pill{
   display:inline-flex;align-items:center;gap:4px;
@@ -171,10 +174,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
 
 /* Pillar label row inside chip */
 .evpl{
-  display:flex;align-items:center;gap:3px;
+  display:flex;align-items:center;gap:0;
   margin-bottom:2px;
 }
-.evpl-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.evpl-dot{display:none;}
 .evpl-name{font-size:7.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;}
 
 .evt{display:block;font-weight:600;color:var(--dark);line-height:1.35;}
@@ -398,7 +401,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
   <div class="mo">
     <div class="mo-num">JULY<span>Emma</span></div>
     <div class="mo-body">
-      <div class="mo-desc">Month 1 targets Emma, positioning Krystal as the credible alternative to mainstream hosting for values-led founders who want proof over vague promises. Content leads with environmental integrity and independence &amp; transparency, with all four story pillars reinforced through always-on organic and challenger-led awareness content.</div>
+      <div class="mo-desc mo-desc-with-avatar">
+        <img class="mo-avatar" src="./Emma.png" alt="Emma persona portrait" loading="lazy" decoding="async"/>
+        <div class="mo-desc-copy">Month 1 targets Emma, positioning Krystal as the credible alternative to mainstream hosting for values-led founders who want proof over vague promises. Content leads with environmental integrity and independence &amp; transparency, with all four story pillars reinforced through always-on organic and challenger-led awareness content.</div>
+      </div>
     </div>
   </div>
 
@@ -471,7 +477,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
   <div class="mo">
     <div class="mo-num">AUGUST<span>James</span></div>
     <div class="mo-body">
-      <div class="mo-desc">Month 2 targets James, positioning Krystal as the hosting partner agencies can confidently put in front of clients. James converts through conversation, not a landing page – all conversion-stage content directs toward a discovery call or demo, not a direct signup. Content leads with performance and transparency, supported by proof-led stories on credentials, support and Krystal's challenger view of weak ESG claims and industry consolidation.</div>
+      <div class="mo-desc mo-desc-with-avatar">
+        <img class="mo-avatar" src="./james.png" alt="James persona portrait" loading="lazy" decoding="async"/>
+        <div class="mo-desc-copy">Month 2 targets James, positioning Krystal as the hosting partner agencies can confidently put in front of clients. James converts through conversation, not a landing page – all conversion-stage content directs toward a discovery call or demo, not a direct signup. Content leads with performance and transparency, supported by proof-led stories on credentials, support and Krystal's challenger view of weak ESG claims and industry consolidation.</div>
+      </div>
       </div>
     </div>
 
@@ -531,7 +540,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:var(--bg);color:var(-
   <div class="mo">
     <div class="mo-num">SEPTEMBER<span>Alex</span></div>
     <div class="mo-body">
-      <div class="mo-desc">Month 3 targets Alex, positioning Krystal as infrastructure that can stand up to procurement and sustainability scrutiny. Content leads with environmental integrity, with performance as supporting reassurance – all content treats her as an evaluator, not someone who needs persuading.</div>
+      <div class="mo-desc mo-desc-with-avatar">
+        <img class="mo-avatar" src="./alex.png" alt="Alex persona portrait" loading="lazy" decoding="async"/>
+        <div class="mo-desc-copy">Month 3 targets Alex, positioning Krystal as infrastructure that can stand up to procurement and sustainability scrutiny. Content leads with environmental integrity, with performance as supporting reassurance – all content treats her as an evaluator, not someone who needs persuading.</div>
+      </div>
     </div>
   </div>
 
